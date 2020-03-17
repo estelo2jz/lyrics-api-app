@@ -1,4 +1,5 @@
 import React from 'react'
+export let location = '';
 
 const Navbar = () => {
   return (
