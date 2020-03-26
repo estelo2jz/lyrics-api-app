@@ -59,7 +59,7 @@ export default class Lyrics extends Component {
             <div className="card=body">
               <p className="card-text">{lyrics.lyrics_body}</p>
             </div>
-
+          </div>
             <ul className="list-group mt-3">
               <li className="list-group-item">
                 <strong>Album ID</strong>: {track.album_id}
@@ -76,7 +76,6 @@ export default class Lyrics extends Component {
                 <Moment format="MM/DD/YYYY">{track.first_release_date}</Moment>
               </li>
             </ul>
-          </div>
         </React.Fragment>
       );
     }
