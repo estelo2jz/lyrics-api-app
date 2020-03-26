@@ -64,6 +64,12 @@ export default class Lyrics extends Component {
               <li className="list-group-item">
                 <strong>Song Genre</strong>: {track.primary_genres.music_genre_list[0].music_genre.music_genre_name}
               </li>
+              <li className="list-group-item">
+                <strong>Explicit Words</strong>: {track.explicit === 0 ? 'No' : 'Yes'} 
+              </li>
+              <li className="list-group-item">
+                <strong>Release Date</strong>: {track.first_release_date} 
+              </li>
             </ul>
           </div>
         </React.Fragment>
