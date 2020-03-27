@@ -9,6 +9,12 @@ export default class Search extends Component {
 
   }
 
+  onChange = (e) => {
+    this.setState({
+     [e.target.name]: e.target.value
+    });
+  }
+
   render() {
     return (
       <Consumer>
@@ -19,6 +25,21 @@ export default class Search extends Component {
                 <i className="fas fa-music"></i> Search For A Song
               </h1>
               <p className="lead text-center">Get the lyrics for any song</p>
+              <form>
+                <div className="form-gruop">
+                  <input 
+                    type="text" 
+                    className="form-control" 
+                    placeholder="Song title..."
+                    name="trackTitle"
+                    value={this.state.trackTitle}
+                    onChange={this.onChange}
+                  />
+                </div>
+                <button className="btn btn-primary btn-lg btn-block mb-5" type="submit">
+                  Get Track Lyrics
+                </button>
+              </form>
             </div>
           );
         }}
