@@ -53,7 +53,7 @@ export default class Lyrics extends Component {
           </Link>
           <div className="card">
             <h5 className="card-header">
-              {track.track_name} by{' '} 
+              {track.track_name} by{' '}
               <span className="text-secondary">{track.artist_name}</span>
             </h5>
             <div className="card=body">
